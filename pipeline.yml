@@ -72,7 +72,7 @@ jobs:
       trigger: true
   - put: deploy-nginx
     params:
-      manifest: Deployment-nginx/nginx.yml
+      manifest: Deployment-nginx/nginx-notHA.yml
       stemcells:
       - stemcell/stemcell.tgz
       releases:
